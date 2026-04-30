@@ -3,10 +3,7 @@
 A full-stack web app for managing projects, teams, and tasks with role-based access control.
 
 ## 🌐 Live Demo
-👉 **https://team-task-manager-production-xxxx.up.railway.app**
-
-## 🎬 Demo Video
-👉 **https://www.loom.com/share/your-video-id**
+👉 **team-task-manager-production-7f5d.up.railway.app**
 
 ## 🚀 Tech Stack
 - **Backend:** FastAPI (Python 3.12)
@@ -24,8 +21,8 @@ A full-stack web app for managing projects, teams, and tasks with role-based acc
 - 🎨 Kanban Board View
 
 ## 🧪 Test Credentials
-- **Admin:** admin@demo.com / password123
-- **Member:** john@demo.com / password123
+- **Admin:** nishan@gmail.com / nishan
+- **Member:** nishan1@gmail.com / nishan1
 
 ## ⚙️ Local Setup
 
