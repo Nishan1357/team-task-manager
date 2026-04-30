@@ -36,7 +36,9 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 
+Create .env file
 SECRET_KEY=your-secret-key
 DATABASE_URL=sqlite:///./taskmanager.db
 
+run
 uvicorn app.main:app --reload
