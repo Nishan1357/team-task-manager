@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Team Task Manager</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>📋 Task Manager</h2>
+    <div>
+      <span id="user-info"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="stats" id="stats"></section>
+
+    <section>
+      <div class="section-header">
+        <h2>Your Projects</h2>
+        <button onclick="showCreateProject()">+ New Project</button>
+      </div>
+      <div id="projects-list" class="grid"></div>
+    </section>
+
+    <section id="tasks-section" class="hidden">
+      <div class="section-header">
+        <h2 id="project-title"></h2>
+        <div>
+          <button id="add-member-btn" onclick="showAddMember()">+ Add Member</button>
+          <button onclick="showCreateTask()">+ New Task</button>
+        </div>
+      </div>
+      <div id="members-list" class="members"></div>
+      <div class="kanban">
+        <div class="column" data-status="todo"><h3>📝 To Do</h3><div class="tasks"></div></div>
+        <div class="column" data-status="in_progress"><h3>⚙️ In Progress</h3><div class="tasks"></div></div>
+        <div class="column" data-status="done"><h3>✅ Done</h3><div class="tasks"></div></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
